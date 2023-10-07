@@ -1,4 +1,5 @@
 {
+  "name": "payroll",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -12,7 +13,6 @@
     "tsconfig": "*",
     "turbo": "latest"
   },
-  "name": "payroll",
   "packageManager": "npm@10.1.0",
   "workspaces": [
     "apps/*",

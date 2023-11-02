@@ -1,1 +1,0 @@
-Next frontend app for payroll processing

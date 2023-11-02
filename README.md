@@ -1,1 +1,0 @@
-A monorepo for payroll processing app

@@ -1,6 +1,16 @@
+// since layout file has the highest priority in all of the app routing.
+// We can use this file as a replacement for _app file from pages router
+// and put the trpc client provider in this file.
+
+// here the 'trpc.withTrpc' example won't work and we'll have to create a 
+// React-Query provider for it similar to what we do in react example
+
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+
+import { TrpcProvider } from './_trpc/Provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +26,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <TrpcProvider>
+          {children}
+        </TrpcProvider>
+      </body>
     </html>
   )
 }

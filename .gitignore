@@ -34,3 +34,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+apps/**/.open-next/
+
+apps/**/.sst/
